@@ -124,11 +124,6 @@ module.exports = (env, args) => {
       new MiniCssExtractPlugin({
         filename: 'css/style.css'
       }),
-      new CopyPlugin({
-        patterns: [
-          { from: path.resolve(__dirname, './source/src/assets/video'), to: "video" },
-        ]
-      }),
     ].concat(addHtmlPlugin(pagesList())),
   }
 };
